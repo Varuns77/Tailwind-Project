@@ -260,19 +260,37 @@
     </section>
 
     <!-- Project Collection -->
-    <section class="p-5 flex flex-col gap-8">
-      <h2 class="text-xl font-semibold text-black-dark">Our collection <br>
+    <section class="p-5 flex flex-col gap-8 max-w-[1200px] mx-auto">
+      <h2 class="text-xl md:text-4xl font-semibold text-black-dark">Our collection <br>
         best project </h2>
-      <div class="grid grid-cols-2 gap-5 max-w-[320px]">
-        <img src="./public/collection/project1.png" alt="">
-        <img src="./public/collection/project2.png" alt="">
-        <img src="./public/collection/project3.png" alt="">
-        <img src="./public/collection/project4.png" alt="">
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-5 max-w-[320px] md:max-w-[1200px] mx-auto">
+        <picture>
+          <source media="(min-width: 799px)" srcset="./public/collection/bigProject1.png" />
+          <source media="(max-width: 800px)" srcset="./public/collection/project1.png" />
+          <img src="./public/collection/project1.png" alt="">
+        </picture>
+        <picture>
+          <source media="(min-width: 799px)" srcset="./public/collection/bigProject2.png" />
+          <source media="(max-width: 800px)" srcset="./public/collection/project2.png" />
+          <img src="./public/collection/project2.png" alt="">
+        </picture>
+        <picture>
+          <source media="(min-width: 799px)" srcset="./public/collection/bigProject3.png" />
+          <source media="(max-width: 800px)" srcset="./public/collection/project3.png" />
+          <img src="./public/collection/project3.png" alt="">
+        </picture>
+        <picture>
+          <source media="(min-width: 799px)" srcset="./public/collection/bigProject4.png" />
+          <source media="(max-width: 800px)" srcset="./public/collection/project4.png" />
+          <img src="./public/collection/project4.png" alt="">
+        </picture>
+
       </div>
     </section>
 
-    <footer class="black-grad text-white p-5">
-      <div class="flex flex-col gap-4">
+    <footer class="black-grad">
+      <div class="max-w-[1200px] text-white p-5 flex flex-col md:flex-row gap-[40px] md:gap[140px] py-20 mx-auto">
+      <div class="flex flex-col gap-4 max-w-[550px]">
         <h2 class="text-xl font-semibold text-black-dark">Logo</h2>
         <p>is a general contractor company based in Jakarta. More than 25 years of experience in building and carving out Indonesia's development.</p>
         <div class="flex mt-4 gap-2">
@@ -283,7 +301,7 @@
         </div>
       </div>
 
-      <div class="flex mt-10 gap-8">
+      <div class="flex gap-8">
         <div class="flex flex-col">
           <h4 class="font-semibold text-lg">Company</h4>
           <a class="text-md cursor-pointer mt-8">About</a>
@@ -298,6 +316,7 @@
           <p class="text-md cursor-pointer mt-4">License</p>
         </div>
       </div>
+    </div>
     </footer>
   </main>
   <script type="module" src="/main.js"></script>
