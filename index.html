@@ -220,10 +220,10 @@
     </section>
 
     <!-- Teams Section -->
-    <section class="p-5">
+    <section class="p-5 max-w-[1200px] mx-auto flex flex-col lg:flex-row">
       <div
-        class="bg-[url('./public/Teams/Group18.png')] h-[340px] bg-no-repeat bg-cover first-letter: flex justify-center items-end mb-40">
-        <div class="flex flex-col items-center gap-2 black-grad h-[240px] w-[250px] relative top-20 p-5">
+        class="bg-[url('./public/Teams/Group18.png')] h-[340px] bg-no-repeat bg-cover first-letter: flex justify-center items-end mb-32 lg:flex-1 lg:mr-40 lg:flex-col lg:justify-center lg:h-[500px] lg:mb-16">
+        <div class="flex flex-col items-center gap-2 black-grad h-[240px] w-[250px] relative top-20 lg:top-0 p-5 lg:-right-24">
           <div>
             <img src="./public/Teams/unsplash_IF9TK5Uy-KI.png" alt="">
           </div>
@@ -233,7 +233,7 @@
         </div>
       </div>
 
-      <div class="flex flex-col gap-2">
+      <div class="flex flex-col gap-2 lg:flex-1 lg:justify-center">
         <h2 class="text-xl font-semibold text-black-dark">Meet and talk with <br>
           our best architecture</h2>
         <p class="text-base text-gray-400">All our teams are professional and competent in their fields and will help
@@ -248,15 +248,17 @@
     </section>
 
     <!-- Story Section -->
-    <section class="p-5 flex flex-col gap-4">
-      <img src="./public/Mask Group.png" class="w-full p-0">
-      <h2 class="text-xl font-semibold text-black-dark">Our Story <br>
-        Who we are</h2>
-      <p class="text-gray-400">Established in 1992, PT. Wahana Cipta operates as a General Contracting company with a
-        footprint that we have planted throughout Indonesia. Initially, we focused on construction in the field of
-        residential housing development in Jakarta.
-        As the company grows, now we are present as a reliable...</p>
-      <button class="bg-blue text-white shadow-btn self-start">See more</button>
+    <section class="p-5 flex flex-col gap-4 md:flex-row-reverse max-w-[1200px] mx-auto">
+      <img src="./public/Mask Group.png" class="w-full p-0 flex-1">
+      <div class="flex flex-col gap-4 flex-1">
+        <h2 class="text-xl font-semibold text-black-dark">Our Story <br>
+          Who we are</h2>
+        <p class="text-gray-400">Established in 1992, PT. Wahana Cipta operates as a General Contracting company with a
+          footprint that we have planted throughout Indonesia. Initially, we focused on construction in the field of
+          residential housing development in Jakarta.
+          As the company grows, now we are present as a reliable...</p>
+        <button class="bg-blue text-white shadow-btn self-start">See more</button>
+      </div>
     </section>
 
     <!-- Project Collection -->
@@ -290,33 +292,34 @@
 
     <footer class="black-grad">
       <div class="max-w-[1200px] text-white p-5 flex flex-col md:flex-row gap-[40px] md:gap[140px] py-20 mx-auto">
-      <div class="flex flex-col gap-4 max-w-[550px]">
-        <h2 class="text-xl font-semibold text-black-dark">Logo</h2>
-        <p>is a general contractor company based in Jakarta. More than 25 years of experience in building and carving out Indonesia's development.</p>
-        <div class="flex mt-4 gap-2">
-          <img class="cursor-pointer" src="./public/socialicons/logo1.svg" alt="">
-          <img class="cursor-pointer" src="./public/socialicons/logo2.svg" alt="">
-          <img class="cursor-pointer" src="./public/socialicons/logo3.svg" alt="">
-          <img class="cursor-pointer" src="./public/socialicons/logo4.svg" alt="">
+        <div class="flex flex-col gap-4 max-w-[550px]">
+          <h2 class="text-xl font-semibold text-black-dark">Logo</h2>
+          <p>is a general contractor company based in Jakarta. More than 25 years of experience in building and carving
+            out Indonesia's development.</p>
+          <div class="flex mt-4 gap-2">
+            <img class="cursor-pointer" src="./public/socialicons/logo1.svg" alt="">
+            <img class="cursor-pointer" src="./public/socialicons/logo2.svg" alt="">
+            <img class="cursor-pointer" src="./public/socialicons/logo3.svg" alt="">
+            <img class="cursor-pointer" src="./public/socialicons/logo4.svg" alt="">
+          </div>
         </div>
-      </div>
 
-      <div class="flex gap-8">
-        <div class="flex flex-col">
-          <h4 class="font-semibold text-lg">Company</h4>
-          <a class="text-md cursor-pointer mt-8">About</a>
-          <p class="text-md cursor-pointer mt-4">How it works</p>
-          <p class="text-md cursor-pointer mt-4">Terms</p>
-          <p class="text-md cursor-pointer mt-4">About</p>
-        </div>
-        
-        <div class="flex flex-col">
-          <h4 class="font-semibold text-lg">More</h4>
-          <p class="text-md cursor-pointer mt-8">Documentation</p>
-          <p class="text-md cursor-pointer mt-4">License</p>
+        <div class="flex gap-8">
+          <div class="flex flex-col">
+            <h4 class="font-semibold text-lg">Company</h4>
+            <a class="text-md cursor-pointer mt-8">About</a>
+            <p class="text-md cursor-pointer mt-4">How it works</p>
+            <p class="text-md cursor-pointer mt-4">Terms</p>
+            <p class="text-md cursor-pointer mt-4">About</p>
+          </div>
+
+          <div class="flex flex-col">
+            <h4 class="font-semibold text-lg">More</h4>
+            <p class="text-md cursor-pointer mt-8">Documentation</p>
+            <p class="text-md cursor-pointer mt-4">License</p>
+          </div>
         </div>
       </div>
-    </div>
     </footer>
   </main>
   <script type="module" src="/main.js"></script>
